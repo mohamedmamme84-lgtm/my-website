@@ -1,0 +1,185 @@
+/* GLOBAL */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+/* ✨ New text color */
+body {
+  background: radial-gradient(circle at top, #1a1a1a, #000);
+  color: #e6faff; /* softer, brighter cyan-white */
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* NAVIGATION */
+header {
+  background: rgba(0, 0, 0, 0.85);
+  padding: 15px 30px;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  backdrop-filter: blur(10px);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* ⭐ BIG ANIMATED MOVING NAME ⭐ */
+.logo {
+  color: #4deeea;
+  font-size: 3rem; /* increased size */
+  font-weight: 800;
+  letter-spacing: 3px;
+
+  /* movement animation */
+  animation: moveName 4s infinite ease-in-out;
+}
+
+/* moving name animation */
+@keyframes moveName {
+  0% {
+    transform: translateX(0);
+    text-shadow: 0 0 10px #4deeea;
+  }
+  50% {
+    transform: translateX(25px);
+    text-shadow: 0 0 25px #4deeea;
+  }
+  100% {
+    transform: translateX(0);
+    text-shadow: 0 0 10px #4deeea;
+  }
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 30px;
+}
+
+.nav-links a {
+  color: #aeefff; /* new lighter color */
+  text-decoration: none;
+  transition: 0.4s;
+}
+
+.nav-links a:hover {
+  color: #4deeea;
+}
+
+/* PROFILE IMAGE */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero .accent {
+  color: #4deeea;
+  font-weight: bold;
+}
+
+.btn {
+  margin-top: 25px;
+  padding: 14px 30px;
+  background: #4deeea;
+  color: #000;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+/* SKILLS */
+.skill-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 70%;
+  margin: 20px auto;
+  font-size: 1.4rem;
+}
+
+.bar {
+  width: 60%;
+  height: 12px;
+  background: rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+}
+
+.progress {
+  height: 12px;
+  border-radius: 20px;
+  background: #4deeea;
+}
+
+.progress.html {
+  width: 80%;
+}
+
+.progress.css {
+  width: 60%;
+}
+
+.progress.js {
+  width: 40%;
+}
+.life-img {
+  width: 240px; /* smaller, balanced size */
+  height: 180px; /* keeps proportions clean */
+  object-fit: cover;
+  border-radius: 18px;
+  margin-top: 15px;
+  margin-bottom: 30px;
+  box-shadow: 0 0 18px rgba(77, 238, 234, 0.45);
+  transition: transform 0.25s ease;
+}
+
+.life-img:hover {
+  transform: scale(1.04); /* soft, subtle zoom */
+}
+
+/* PROJECT CARDS */
+.project-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 35px;
+}
+
+.project-card {
+  background: rgba(255, 255, 255, 0.08);
+  padding: 30px;
+  border-radius: 18px;
+  backdrop-filter: blur(12px);
+  color: #d9ffff; /* new text color */
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 30px;
+  background: #000;
+  color: #4deeea;
+}

@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Personal Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- HEADER / NAVBAR -->
+    <header>
+      <nav class="navbar">
+        <h1 class="logo">MOHAMED</h1>
+
+        <img src="images/MUHE.jpg" alt="Profile Photo" class="profile-pic" />
+
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero">
+      <h2>Hello, I'm <span class="accent">MOHAMED HUSSIEN</span></h2>
+      <p>Web Developer • Designer • Creator</p>
+      <button class="btn" onclick="scrollToSection('projects')">
+        View My Work
+      </button>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+      <h2>About Me</h2>
+
+      <img src="images/MUHE.jpg" alt="Profile Photo" class="profile-pic" />
+
+      <p><strong>Name:</strong> Mohamed Hussien</p>
+      <p><strong>Field:</strong> Computer Science – 3rd Year Student</p>
+
+      <p>
+        I studied my primary education at
+        <strong>Bamo Number 2 Primary School</strong>, then joined
+        <strong>Amigna Gasgar Secondary School</strong>. After finishing high
+        school, I joined <strong>Arsi University</strong>, where I am currently
+        a 3rd-year Computer Science student passionate about technology,
+        programming, and solving real-world problems.
+      </p>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+      <h2>My Skills</h2>
+
+      <div class="skill-bar">
+        <span>HTML</span>
+        <div class="bar"><div class="progress html"></div></div>
+        <span class="percent">80%</span>
+      </div>
+
+      <div class="skill-bar">
+        <span>CSS</span>
+        <div class="bar"><div class="progress css"></div></div>
+        <span class="percent">60%</span>
+      </div>
+
+      <div class="skill-bar">
+        <span>JavaScript</span>
+        <div class="bar"><div class="progress js"></div></div>
+        <span class="percent">40%</span>
+      </div>
+
+      <!-- LIFE SKILL -->
+      <h2 class="life-title">My Life Skill</h2>
+
+      <!-- TABLE TENNIS -->
+      <p class="life-subtitle">Table Tennis</p>
+      <img
+        src="images/muhe1.jpg"
+        alt="Me Playing Table Tennis"
+        class="life-img"
+      />
+
+      <!-- BICYCLE -->
+      <p class="life-subtitle">Bicycle Riding</p>
+      <img src="images/muhe3.jpg" alt="Me Riding Bicycle" class="life-img" />
+
+      <!-- MARTIAL ART -->
+      <p class="life-subtitle">Martial Art</p>
+      <img
+        src="images/muhe2.jpg"
+        alt="Me Practicing Martial Art"
+        class="life-img"
+      />
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+      <h2>Projects</h2>
+
+      <div class="project-grid">
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>
+            I am interested in web development, video editing, and graphics
+            design.
+          </p>
+        </div>
+
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>Online registration using HTML, CSS, and JavaScript.</p>
+        </div>
+
+        <div class="project-card">
+          <h3>Project Title</h3>
+          <p>
+            Arsi University library management system using Java programming
+            language.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+      <h2>+251928879132</h2>
+      <p>
+        Email me at:
+        <a href="mailto:mohamedmamme84@gmail.com">mohamedmamme84@gmail.com</a>
+      </p>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+      <p>© 2025 Mohamed Hussien</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
